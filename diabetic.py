@@ -19,12 +19,12 @@ with col1:
     Age=st.text_input("Enter the Age:")
 
 
-    with open(r"C:\Users\my pc\dia.dill","rb") as f:
+    with open(r"dia.dill","rb") as f:
         model=dill.load(f)
 
 
 with col2:
-    st.image("F:\dia.jpeg")
+    st.image("dia.jpeg")
 
 if st.button("prediction"):
     data=[[Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,Diabatespedigreefunction,Age]]
