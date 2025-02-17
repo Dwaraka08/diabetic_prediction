@@ -28,7 +28,7 @@ with col2:
 
 if st.button("prediction"):
     data=[[Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,Diabatespedigreefunction,Age]]
-    data_array=np.array(data,dtype=float).reshape(1,-1)
+    data_array=np.array(data).reshape(1,-1)
     prediction=model.predict(data_array)
     if prediction ==1:
         st.write("Diabetic")
